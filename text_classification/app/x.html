@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask App</title>
+    <style>
+        /* Add your styles here */
+        gradio-container {
+            /* Add any styles for the Gradio container */
+        }
+
+        text-classification-title {
+            /* Add styles for the animated Text Classification title */
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="gradio-container">
+        <script
+            type="module"
+            src="https://gradio.s3-us-west-2.amazonaws.com/4.12.0/gradio.js"
+        ></script>
+
+        <gradio-app src="https://bestekucuk-text-classfication.hf.space"></gradio-app>
+    </div>
+
+    <h1 id="text-classification-title">Animated Text Classification</h1>
+
+    <script>
+        // Add any additional scripts here
+    </script>
+</body>
+</html>
